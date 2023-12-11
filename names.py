@@ -15,7 +15,7 @@ file_path = 'output.txt'
 list_of_strings = ["Value1", "Value2", "Value3"]
 f = open("output.txt", "a")
 for element in fourth_column_list:
-    f.write(element, ", ")
+    f.write(element, ",")
 f.close()
 
 # # Open the file in write mode

@@ -22,3 +22,10 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     // Output the list of fourth column values
     console.log(fourthColumnList);
 });
+
+
+function generateName() {
+    const randomIndex = Math.floor(Math.random() * names.length);
+    const generatedName = names[randomIndex];
+    document.getElementById('generatedName').textContent = generatedName;
+}
