@@ -9,7 +9,7 @@ with open(file_path, 'r') as file:
 # Output the list of fourth column values
 print(fourth_column_list)
 
-file_path = './output.txt'
+file_path = 'output.txt'
 
 # Example list of strings (replace this with your actual list)
 list_of_strings = ["Value1", "Value2", "Value3"]
