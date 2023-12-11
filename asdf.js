@@ -2,7 +2,6 @@ const fs = require('fs');
 
 // Specify the path to your CSV file
 const filePath = './names.csv';
-let names;
 
 // Read the CSV file
 fs.readFile(filePath, 'utf8', (err, data) => {
@@ -22,11 +21,8 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
     // Output the list of fourth column values
     console.log(fourthColumnList);
-    names = fourthColumnList;
-
-    // Additional functionality, if needed
-    generateName();
 });
+
 
 function generateName() {
     const randomIndex = Math.floor(Math.random() * names.length);
