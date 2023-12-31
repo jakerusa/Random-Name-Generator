@@ -13,14 +13,17 @@ function generateName(gender) {
 
     const randomIndex = Math.floor(Math.random() * names.length);
     const generatedName = names[randomIndex];
-      
-    // Add the animatedName class to trigger the animation
+    
+    // Get the element
     const generatedNameElement = document.getElementById('generatedName');
+    
+    // Remove the animatedName class
+    generatedNameElement.classList.remove('animatedName');
+    
+    // Trigger reflow to restart the animation
+    generatedNameElement.offsetWidth; 
+    
+    // Add the animatedName class to trigger the animation
     generatedNameElement.textContent = generatedName;
     generatedNameElement.classList.add('animatedName');
-    
-    // Remove the animatedName class after the animation duration (500ms in this example)
-    setTimeout(() => {
-        generatedNameElement.classList.remove('animatedName');
-    }, 500);
 }
