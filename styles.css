@@ -52,3 +52,20 @@ button.male {
 button.male:hover {
     background-color: #3385ff;
 }
+
+/* Add a new CSS class for animation */
+.animatedName {
+    animation: dropIn 0.5s ease-in-out;
+}
+
+/* Keyframes for the drop-in animation */
+@keyframes dropIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
