@@ -64,6 +64,10 @@ button.male:hover {
         transform: translateY(-20px);
         opacity: 0;
     }
+    50% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
     100% {
         transform: translateY(0);
         opacity: 1;
