@@ -26,4 +26,31 @@ function generateName(gender) {
     // Add the animatedName class to trigger the animation
     generatedNameElement.textContent = generatedName;
     generatedNameElement.classList.add('animatedName');
+
+    // Use the Fetch API to get content from Contentful
+    fetchContentfulData(); // Assuming you have a function named fetchContentfulData
+
+}
+
+// Example usage:
+// generateName('female');
+// generateName('male');
+
+function fetchContentfulData() {
+    // Replace with your Contentful space ID and access token
+    const contentfulSpaceId = 'yhbtdamyh63f';
+    const contentfulAccessToken = 'rR1u4KLUcJxvXlF-D1fEqAEUAJInhUDgAbxG2-Ovab4';
+
+    // Use the Fetch API to get content from Contentful
+    fetch(`https://cdn.contentful.com/spaces/${contentfulSpaceId}/entries?access_token=${contentfulAccessToken}`)
+        .then(response => response.json())
+        .then(data => {
+            // Process and display your content
+            console.log(data);
+
+            // Example: Display content in the generatedName element
+            const generatedNameElement = document.getElementById('generatedName');
+            generatedNameElement.textContent = data.items[0].fields.name; // Adjust this based on your actual content structure
+        })
+        .catch(error => console.error(error));
 }
