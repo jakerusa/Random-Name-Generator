@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"  # Adjust this based on your build process
-  publish = "dist"           # Adjust this based on your build output
+  publish = "build"           # Adjust this based on your build output
 
 [context.production.environment]
-  CONTENTFUL_SPACE_ID = "yhbtdamyh63f"
-  CONTENTFUL_ACCESS_TOKEN = "rR1u4KLUcJxvXlF-D1fEqAEUAJInhUDgAbxG2-Ovab4"
+  "CONTENTFUL_SPACE_ID" = "yhbtdamyh63f"
+  "CONTENTFUL_ACCESS_TOKEN" = "rR1u4KLUcJxvXlF-D1fEqAEUAJInhUDgAbxG2-Ovab4"
