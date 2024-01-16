@@ -4,4 +4,4 @@
 
 [context.production.environment]
   "CONTENTFUL_SPACE_ID" = "yhbtdamyh63f"
-  "CONTENTFUL_ACCESS_TOKEN" = "rR1u4KLUcJxvXlF-D1fEqAEUAJInhUDgAbxG2-Ovab4"
+  "CONTENTFUL_ACCESS_TOKEN" = "EYdxtFAqhUFLS69XPREvNF9tJebzPAbeOWLsTzhwv6Y"

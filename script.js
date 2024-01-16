@@ -39,7 +39,7 @@ function generateName(gender) {
 function fetchContentfulData() {
     // Replace with your Contentful space ID and access token
     const contentfulSpaceId = 'yhbtdamyh63f';
-    const contentfulAccessToken = 'rR1u4KLUcJxvXlF-D1fEqAEUAJInhUDgAbxG2-Ovab4';
+    const contentfulAccessToken = 'EYdxtFAqhUFLS69XPREvNF9tJebzPAbeOWLsTzhwv6Y';
 
     // Use the Fetch API to get content from Contentful
     fetch(`https://cdn.contentful.com/spaces/${contentfulSpaceId}/entries?access_token=${contentfulAccessToken}`)
