@@ -15,7 +15,10 @@
         "styled-components": "^6.1.8",
       "contentful": "^10.6.16"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "netlify-cli": "^17.14.0",
+        "contentful": "^10.6.16"
+    },
     "keywords": [],
     "author": "Jake Rusakevich",
     "license": "ISC"
